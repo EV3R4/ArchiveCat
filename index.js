@@ -17,12 +17,6 @@ if (fs.existsSync('lastupdate.txt')) {
     lastUpdate = 0;
 }
 
-if (config.github.ignore) {
-    ignore = [];
-} else {
-    ignore = [];
-}
-
 function update(url) {
     https.get(url, {headers: {'User-Agent': 'ArchiveCat'}}, (res) => {
         if (res.statusCode != 200) {
@@ -33,7 +27,7 @@ function update(url) {
         res.on('data', (data) => body += data.toString());
         res.on('end', () => {
             JSON.parse(body).forEach(repo => {
-                if (ignore.includes(repo.full_name)) {
+                if (config.github.ignore.includes(repo.full_name)) {
                     console.log(`Ignoring ${repo.full_name}!`);
                     return;
                 }

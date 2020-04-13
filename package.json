@@ -1,0 +1,11 @@
+{
+  "name": "archivecat",
+  "version": "0.0.1",
+  "description": "ArchiveCat will clone and pull starred git repositories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EV3R4",
+  "license": "MIT"
+}

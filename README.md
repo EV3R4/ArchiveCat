@@ -7,7 +7,7 @@ ArchiveCat will clone and pull starred git repositories.
 
 ## Installation
 * Install [Node.js](https://nodejs.org/)
-* Clone the project
+* Clone the repository with `git clone https://github.com/EV3R4/ArchiveCat.git`
 
 ## Setup
 ### Config

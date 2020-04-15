@@ -1,7 +1,7 @@
 # ArchiveCat
 ![GitHub](https://img.shields.io/github/license/EV3R4/ArchiveCat)
 ![GitHub repo size](https://img.shields.io/github/repo-size/EV3R4/ArchiveCat)
-![Node.js zero dependencies](https://img.shields.io/badge/dependencies-0-success)
+![Zero dependencies](https://img.shields.io/badge/dependencies-0-success)
 
 ArchiveCat will clone and pull starred git repositories.
 

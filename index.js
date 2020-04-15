@@ -11,11 +11,8 @@ if (fs.existsSync('config.json')) {
     return;
 }
 
-if (fs.existsSync('lastupdate.txt')) {
-    lastUpdate = parseInt(fs.readFileSync('lastupdate.txt'));
-} else {
-    lastUpdate = 0;
-}
+lastUpdate = 0;
+if (fs.existsSync('lastupdate.txt')) lastUpdate = parseInt(fs.readFileSync('lastupdate.txt'));
 
 function update(url) {
     https.get(url, {headers: {'User-Agent': 'ArchiveCat'}}, (res) => {

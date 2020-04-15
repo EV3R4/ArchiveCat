@@ -32,7 +32,7 @@ function update(url) {
                 const ownerDirectory = `projects/${repo.owner.login}`;
                 if (fs.existsSync(projectDirectory)) {
                     if (Date.parse(repo.updated_at) < lastUpdate) {
-                        console.log(`Ignoring ${repo.full_name}!`);
+                        console.log(`${repo.full_name} is already up to date!`);
                         return;
                     }
                     console.log(`Pulling ${repo.full_name}...`);

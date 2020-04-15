@@ -38,7 +38,7 @@ function update(url) {
                         console.log(`Ignoring ${repo.full_name}!`);
                         return;
                     }
-                    console.log(`Fetching ${repo.full_name}...`);
+                    console.log(`Pulling ${repo.full_name}...`);
                     execSync(`git pull ${repo.clone_url} master`, {cwd: projectDirectory});
                     console.log('Finished!');
                 } else {

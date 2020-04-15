@@ -51,7 +51,7 @@ function update(url) {
             });
             if (!res.headers.link || !res.headers.link.includes('next')) return;
             const link = res.headers.link.split(';')[0];
-            update(link.substring(1, link.length - 1), 0);
+            update(link.substring(1, link.length - 1));
         });
         res.on('error', (error) => console.error(error));
     });

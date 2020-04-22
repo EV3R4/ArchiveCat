@@ -36,7 +36,7 @@ function update(url) {
                         return;
                     }
                     console.log(`Pulling ${repo.full_name}...`);
-                    execSync(`git pull ${repo.clone_url} master`, {cwd: projectDirectory});
+                    execSync(`git pull ${repo.clone_url} ${repo.default_branch}`, {cwd: projectDirectory});
                     console.log('Finished!');
                 } else {
                     console.log(`Cloning ${repo.full_name}...`);

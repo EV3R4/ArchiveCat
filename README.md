@@ -6,8 +6,7 @@
 
 ## Installation
 * Install [Node.js](https://nodejs.org/)
-* Install [Git](https://git-scm.com/)
-* Clone the repository with `git clone https://github.com/EV3R4/ArchiveCat.git`
+* Clone the repository with `git clone https://github.com/EV3R4/ArchiveCat.git` or download the [zip](https://github.com/EV3R4/ArchiveCat/archive/master.zip)
 
 ## Setup
 ### Config

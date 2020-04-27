@@ -5,7 +5,7 @@ const { execSync } = require('child_process'),
 if (!fs.existsSync('projects')) fs.mkdirSync('projects');
 
 if (fs.existsSync('config.json')) {
-    config = JSON.parse(fs.readFileSync('config.json').toString());
+    config = require('./config.json');
 } else {
     console.log('No config.json found!');
     return;

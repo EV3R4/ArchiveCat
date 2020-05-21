@@ -56,4 +56,4 @@ function update(url) {
 }
 console.log('Updating...');
 update(`https://api.github.com/users/${config.github.username}/starred?per_page=100`);
-fs.writeFileSync('lastupdate.txt', Date.now());
+fs.writeFileSync('lastupdate.txt', Date.now().toString());

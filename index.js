@@ -4,13 +4,11 @@ const { execSync } = require('child_process'),
 
 if (!fs.existsSync('projects')) fs.mkdirSync('projects');
 
-let config;
-if (fs.existsSync('config.json')) {
-    config = require('./config.json');
-} else {
+if (!fs.existsSync('config.json')) {
     console.log('No config.json found!');
     return;
 }
+const config = require('./config.json');
 
 let lastUpdate = 0;
 if (fs.existsSync('lastupdate.txt')) lastUpdate = parseInt(fs.readFileSync('lastupdate.txt'));

@@ -16,7 +16,7 @@ if (fs.existsSync('lastupdate.txt')) lastUpdate = parseInt(fs.readFileSync('last
 function update(url) {
     https.get(url, {headers: {'User-Agent': 'ArchiveCat'}}, (res) => {
         if (res.statusCode != 200) {
-            console.log(`${res.statusCode}: ${res.statusMessage}`);
+            console.error(`${res.statusCode}: ${res.statusMessage}`);
             return;
         }
         let body = '';

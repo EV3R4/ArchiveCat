@@ -31,3 +31,6 @@ Run `node index` in a cmd of your choice
 
 ## Notes
 If you are using Windows, you might need to use Git Bash
+
+## Rodmap
+The projects roadmap is [here](https://github.com/EV3R4/ArchiveCat/projects/1)

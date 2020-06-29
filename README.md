@@ -1,3 +1,5 @@
+# WARNING: THIS PROJECT IS PAUSED/DISCONTINUED. IT IS NOT RECOMMENDED TO USE IT
+
 # ArchiveCat
 ## ArchiveCat will clone and pull starred git repositories.
 ![GitHub](https://img.shields.io/github/license/EV3R4/ArchiveCat)
